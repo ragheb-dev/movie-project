@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7fc;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    width: 450px;
+    max-width: 90%;
+    padding: 30px;
+    background-color:#f8fafc;
+    border-radius: 12px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    animation: fadeIn 1.5s ease;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #333;
+}
+
+.container h1,
+.subtitle {
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 17px;
+    color:#6b7280;
+    margin-bottom: 35px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size:15px;
+    color: #444;
+}
+
+input{
+    width:100%;
+    height:48px;
+    padding:0 15px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:15px;
+}
+input::placeholder{
+    color:#9ca3af;
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.button-group button{
+
+    width:100%;
+    height:50px;
+    font-size:16px;
+    font-weight:600;
+    background:#2563eb;
+    border:none;
+    border-radius:8px;
+    transition: background-color 0.8s ease;
+}
+
+.button-group button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.login-section {
+    margin-top: 30px;
+    text-align: center;
+    font-size:15px;
+    color:#6b7280;
+}
+
+.login-section a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-section a:hover {
+    color: #1d4ed8;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+}

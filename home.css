@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    height: 70px;
+    padding: 0 50px;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #1c1c1c;
+}
+
+.navbar h1 {
+    font-size: 28px;
+}
+
+#logoutBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.featured {
+    padding: 40px 50px;
+}
+
+.featured h2 {
+    margin-bottom: 20px;
+}
+
+#featuredMovie {
+    height: 400px;
+    background-color: #222;
+    border-radius: 10px;
+}
+.movies {
+    padding: 20px 50px 50px;
+}
+
+.movies h2 {
+    margin-bottom: 20px;
+}
+
+#moviesContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    font-size: 18px;
+    margin: 12px;
+}
+
+.movie-card p {
+    color: #aaa;
+    margin: 0 12px 15px;
+}
+#featuredMovie {
+    display: flex;
+    overflow: hidden;
+}
+
+#featuredMovie img {
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.featured-info {
+    padding: 40px;
+}
+
+.featured-info h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.featured-info p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.watch-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.watch-btn:hover {
+    background-color: #b20710;
+}
+.movie-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.movie-card img {
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover img {
+    transform: scale(1.05);
+}
